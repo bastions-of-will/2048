@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="demo_js/netfunnel.js" charset="UTF-8"></script>
+	<script>
+		window.onload = function(){ 
+			NetFunnel_Complete();
+		}
+
+	/* 
+		//referrer 예제, ref: sample.netfunnel.co.kr
+
+		var ref = document.referrer;
+		if (document.referrer.indexOf('sample.netfunnel.co.kr') >= 0){
+			//console.log('sample.netfunnel.co.kr 을 통해 접속');
+		}else {
+			location.replace('2_index_TEST.html');
+		}
+	*/
+	</script>
+</head>
+<body>
+	<h1>NetFUNNEL2 Index Test Page</h1>
+	<p>index.html 에서 넷퍼넬 load action으로 진입 가능여부를 확인 받고,</p>
+	<p>진입이 가능할 경우 index_1.html page로 redirect처리됨. </p>
+
+	<input type="button" value="뒤로가기" onclick="javascript:window.history.back(-1);">
+</body>
+</html>
